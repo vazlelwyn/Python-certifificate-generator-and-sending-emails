@@ -2,7 +2,7 @@
 """
 Created on Sun Dec  6 18:34:02 2020
 
-@author: Hardwell
+@author: Lelwyn
 """
 
 import pandas as pd
@@ -13,7 +13,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase 
 from email import encoders  
 
-data = pd.read_excel (r'C:\Users\Hardwell\Desktop\Certificates\20201205111252_2988.xls') 
+data = pd.read_excel (r'C:\Users\Lelwyn\Desktop\Certificates\20201205111252_2988.xls') 
 
 fromaddr = "example@gmail.com"
 
@@ -25,10 +25,10 @@ s.ehlo()
 s.starttls() 
 
 # Authentication 
-s.login("example@gmail.com", "password")
+s.login("example@gmail.com", "password") 
 
 for i in range(len(data['First Name'])):
-    im = Image.open(r'C:\Users\Hardwell\Desktop\Certificates\IMG-20201205-WA0004.jpg')
+    im = Image.open(r'C:\Users\Lelwyn\Desktop\Certificates\IMG-20201205-WA0004.jpg')
     d = ImageDraw.Draw(im)
     location = (431, 517)
     text_color = (0, 0, 0)
